@@ -12,3 +12,34 @@ class Barajas
         cartas = array
         @cartas = cartas
 end   
+
+def barajar
+    @cartas.shuffle!
+
+end
+
+
+def repartir
+    array1 = []
+    @cartas.each do |cartas|
+        x += 1
+            if(x <= 5)
+                array1.push(cartas)
+            end
+    array1
+    end
+end
+
+
+
+
+
+array1
+end
+end
+
+b1=Barajas.new(52)
+puts b1.barajar.inspect
+puts b1.sacar.inspect
+puts b1.repartir.inspect
+  
